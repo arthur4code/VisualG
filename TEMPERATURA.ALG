@@ -1,19 +1,23 @@
-Algoritmo "Temperatura"
+algoritmo "Condicional"
 
 var
-   Cel, Fah: real
+   ano, nasc, idade: inteiro
    
 inicio
 
-      escreva("Quantos graus em Fahrenheit? ")
-      leia(Fah)
+      escreva("Em que ano estamos: ")
+         leia(ano)
+      escreva("Em que ano voce nasceu: ")
+         leia(nasc)
 
-      Cel <- (Fah-32)/1.8))
+      idade <- ano - nasc
 
-      escreva("Hoje a temperatura e de ", Cel:4:1, " graus Celsius")
-      
+      escreva ("Em ", ano, " voce tera", idade, " anos de idade!")
+         se (idade >= 21) entao
+            escreval("E voce ja e maior de idade")
+
+         senao
+            escreval("E voce ainda não e maior de idade")
+         fimse
 
 fimalgoritmo
-      
-
-      
